@@ -174,32 +174,30 @@ SPI_MOSI
 $Comp
 L power:GND #PWR0116
 U 1 1 5FA4D39C
-P 7050 6100
-F 0 "#PWR0116" H 7050 5850 50  0001 C CNN
-F 1 "GND" H 7055 5927 50  0000 C CNN
-F 2 "" H 7050 6100 50  0001 C CNN
-F 3 "" H 7050 6100 50  0001 C CNN
-	1    7050 6100
+P 7050 6150
+F 0 "#PWR0116" H 7050 5900 50  0001 C CNN
+F 1 "GND" H 7055 5977 50  0000 C CNN
+F 2 "" H 7050 6150 50  0001 C CNN
+F 3 "" H 7050 6150 50  0001 C CNN
+	1    7050 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 5600 6400 5500
+	6350 5600 6350 5500
 Wire Wire Line
-	6400 5800 6400 5600
-Connection ~ 6400 5600
+	6350 5800 6350 5600
+Connection ~ 6350 5600
 $Comp
 L power:GND #PWR0118
 U 1 1 5FA5FC78
-P 6500 6100
-F 0 "#PWR0118" H 6500 5850 50  0001 C CNN
-F 1 "GND" H 6505 5927 50  0000 C CNN
-F 2 "" H 6500 6100 50  0001 C CNN
-F 3 "" H 6500 6100 50  0001 C CNN
-	1    6500 6100
+P 6450 6150
+F 0 "#PWR0118" H 6450 5900 50  0001 C CNN
+F 1 "GND" H 6455 5977 50  0000 C CNN
+F 2 "" H 6450 6150 50  0001 C CNN
+F 3 "" H 6450 6150 50  0001 C CNN
+	1    6450 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 5700 6500 6100
 Wire Wire Line
 	1850 5200 1250 5200
 Text Label 1300 5200 0    50   ~ 0
@@ -219,18 +217,6 @@ F 3 "~" H 6700 3700 50  0001 C CNN
 $EndComp
 Text Label 9800 2000 0    50   ~ 0
 VCCIO_TARGET
-Wire Wire Line
-	6600 5800 6400 5800
-Wire Wire Line
-	6600 5700 6500 5700
-Wire Wire Line
-	6600 5600 6400 5600
-Wire Wire Line
-	7150 4150 7150 3700
-Wire Wire Line
-	7050 6050 7050 6100
-Wire Wire Line
-	6400 5500 6600 5500
 $Comp
 L power:GND #PWR0122
 U 1 1 5F93F841
@@ -252,17 +238,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 3550 50  0001 C CNN
 F 3 "~" H 7350 3700 50  0001 C CNN
 	1    7350 3700
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Elevendroids_Logic_LevelTranslator:74AVC4T774PW U3
-U 1 1 5FA0EC47
-P 7050 5100
-F 0 "U3" H 6750 4200 50  0000 C CNN
-F 1 "74AVC4T774PW" H 7450 4200 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 7050 4100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AVC4T774PW.pdf" H 7160 5295 50  0001 C CNN
-	1    7050 5100
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Raspberry_Pi_2_3 J1
@@ -388,26 +363,16 @@ F 3 "~" H 9500 3450 50  0001 C CNN
 	1    9500 3450
 	1    0    0    -1  
 $EndComp
-Text Label 6200 5300 0    50   ~ 0
+Text Label 6150 5300 0    50   ~ 0
 SBC_MOSI
-Text Label 6200 5100 0    50   ~ 0
+Text Label 6150 5100 0    50   ~ 0
 SBC_MISO
-Text Label 6200 4900 0    50   ~ 0
+Text Label 6150 4900 0    50   ~ 0
 SBC_SCLK
-Wire Wire Line
-	6600 4400 5650 4400
-Wire Wire Line
-	7500 5100 8900 5100
 Wire Wire Line
 	10700 4900 10700 4700
 Wire Wire Line
-	7500 4900 8900 4900
-Wire Wire Line
 	10800 5300 10800 4800
-Wire Wire Line
-	7500 5300 8900 5300
-Wire Wire Line
-	7500 4700 8900 4700
 Wire Wire Line
 	10000 4800 10100 4800
 Wire Wire Line
@@ -477,7 +442,7 @@ Wire Wire Line
 	4450 5800 4350 5800
 Wire Wire Line
 	5650 4050 5650 4400
-Text Label 6200 4700 0    50   ~ 0
+Text Label 6150 4700 0    50   ~ 0
 ~SBC_CS
 Wire Wire Line
 	3450 4700 4450 4700
@@ -500,8 +465,6 @@ F 3 "~" H 5050 4350 50  0001 C CNN
 	1    5050 4350
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5050 4700 6600 4700
 Wire Wire Line
 	4950 4700 5050 4700
 Wire Wire Line
@@ -558,17 +521,17 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0115
 U 1 1 602CA19E
-P 6300 5500
-F 0 "#PWR0115" H 6300 5350 50  0001 C CNN
-F 1 "+3.3V" V 6315 5628 50  0000 L CNN
-F 2 "" H 6300 5500 50  0001 C CNN
-F 3 "" H 6300 5500 50  0001 C CNN
-	1    6300 5500
+P 6250 5500
+F 0 "#PWR0115" H 6250 5350 50  0001 C CNN
+F 1 "+3.3V" V 6265 5628 50  0000 L CNN
+F 2 "" H 6250 5500 50  0001 C CNN
+F 3 "" H 6250 5500 50  0001 C CNN
+	1    6250 5500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6300 5500 6400 5500
-Connection ~ 6400 5500
+	6250 5500 6350 5500
+Connection ~ 6350 5500
 $Comp
 L power:+3.3V #PWR0117
 U 1 1 602E1456
@@ -610,8 +573,6 @@ Wire Wire Line
 	2450 3200 2450 3250
 Wire Wire Line
 	6850 3700 6950 3700
-Wire Wire Line
-	6950 3700 6950 4150
 $Comp
 L power:GND #PWR0123
 U 1 1 60354CD6
@@ -650,7 +611,7 @@ Wire Wire Line
 	7550 3700 7550 3750
 Wire Wire Line
 	7150 2000 8450 2000
-Text Label 6200 4400 0    50   ~ 0
+Text Label 6150 4400 0    50   ~ 0
 ~SPI_EN
 Wire Wire Line
 	5100 6000 5650 6000
@@ -665,17 +626,11 @@ Wire Wire Line
 Wire Wire Line
 	5750 5100 5750 4800
 Wire Wire Line
-	6050 4900 6600 4900
-Wire Wire Line
 	3450 5100 5750 5100
 Wire Wire Line
 	5950 4900 5950 5100
 Wire Wire Line
 	3450 4900 5950 4900
-Wire Wire Line
-	5950 5100 6600 5100
-Wire Wire Line
-	5850 5300 6600 5300
 Wire Wire Line
 	3450 5000 5850 5000
 Wire Wire Line
@@ -1025,8 +980,6 @@ Wire Wire Line
 Connection ~ 7150 2000
 Wire Wire Line
 	7150 2000 7150 3700
-Wire Wire Line
-	5650 4050 8100 4050
 Connection ~ 8100 4050
 Wire Wire Line
 	8100 4050 8850 4050
@@ -1292,4 +1245,51 @@ Wire Wire Line
 	3550 4600 4450 4600
 Text Label 3700 4600 0    50   ~ 0
 ~SBC_CS2
+Wire Wire Line
+	6450 5700 6450 6150
+Wire Wire Line
+	5650 4050 8100 4050
+Wire Wire Line
+	6550 4400 5650 4400
+Wire Wire Line
+	6550 5800 6350 5800
+Wire Wire Line
+	6550 5700 6450 5700
+Wire Wire Line
+	5850 5300 6550 5300
+Wire Wire Line
+	5950 5100 6550 5100
+Wire Wire Line
+	6050 4900 6550 4900
+Wire Wire Line
+	5050 4700 6550 4700
+Wire Wire Line
+	6550 5600 6350 5600
+Wire Wire Line
+	6350 5500 6550 5500
+Wire Wire Line
+	7550 5300 8900 5300
+Wire Wire Line
+	7550 5100 8900 5100
+Wire Wire Line
+	7550 4900 8900 4900
+Wire Wire Line
+	7550 4700 8900 4700
+Wire Wire Line
+	6950 3700 6950 4100
+Wire Wire Line
+	7150 4100 7150 3700
+$Comp
+L Elevendroids_Logic_LevelTranslator:74AVC4T774PW U3
+U 1 1 5FA0EC47
+P 7050 5100
+F 0 "U3" H 6700 4150 50  0000 C CNN
+F 1 "74AVC4T774PW" H 7400 4150 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 7050 4100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AVC4T774PW.pdf" H 7160 5295 50  0001 C CNN
+	1    7050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 6150 7050 6100
 $EndSCHEMATC
